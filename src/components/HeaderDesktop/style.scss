@@ -1,0 +1,53 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  .logo {
+    text-decoration: none;
+    cursor: pointer;
+    display: flex;
+    gap: 5px;
+    //  align-items: center;
+  p {
+    font-family: 'Kalam', cursive;
+    color: #2871cc;
+    margin-top: 10px;
+    font-size: 18px;
+  }
+
+  
+  svg {
+    height: 40px;
+    width: 40px;
+    color: #2871cc;
+  }
+  }
+}
+
+.header-ul {
+  display: flex;
+  justify-content: space-between;
+  gap: 50px;
+  padding-top: 20px;
+  li {
+  list-style: none;
+  a {
+    font-family: 'Heebo';
+    text-decoration: none;
+    color: #dae0f0;
+    font-size: 1.0625rem;
+  }
+  }
+}
+
+.recados {
+  font-family: 'Heebo';
+  text-decoration: none;
+  color: #dae0f0;
+  font-size: 1.0625rem;
+}

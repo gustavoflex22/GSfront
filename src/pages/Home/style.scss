@@ -1,0 +1,114 @@
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+body {
+  background-image: url(/src/assets/uma-baleia-jubarte-saltando-sobre-o-mar-ai-generative.jpg);
+  background-color: rgba(0, 0, 0, 0.6);
+  background-blend-mode: darken;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.pai_conteudo_inicial {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+  margin-top: 6rem;
+  flex-wrap: wrap;
+}
+
+.filho_conteudo_inicial_first,
+.filho_conteudo_inicial {
+  width: 50%;
+}
+
+.filho_conteudo_inicial_first {
+  p {
+    text-align: center;
+    width: 90%;
+    font-family: 'Heebo';
+    color: #ffffff;
+  }
+
+  .buttons {
+    margin-top: .75rem;
+    display: flex;
+    gap: .3rem;
+    justify-content: center;
+  }
+
+  #button_faleconosco,
+  #button_quemsomos {
+    cursor: pointer;
+    width: 12rem;
+    height: 2.8rem;
+    font-family: 'Heebo';
+    font-weight: 600;
+    text-align: center;
+    line-height: 2.8rem;
+  }
+
+  #button_faleconosco {
+    background: #0c5fc5;
+    color: #fff;
+    border: none;
+    border-radius: .5rem;
+  }
+
+  #button_quemsomos {
+    background: none;
+    border: solid .125rem #0c5fc5;
+    color: #fff;
+    border-radius: .5rem;
+  }
+
+  #button_quemsomos:hover {
+    transition: 500ms all;
+    border: solid 2px #0c50ce;
+    color: #fff;
+  }
+}
+
+.filho_conteudo_inicial {
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+footer {
+  display: flex;
+  color: #fff;
+  background-color: #009581;
+  font-family: 'Heebo';
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+@media (max-width: 768px) {
+  .pai_conteudo_inicial {
+    flex-direction: column;
+    align-items: center;
+    padding: 1.25rem;
+  }
+
+  .filho_conteudo_inicial_first,
+  .filho_conteudo_inicial {
+    width: 100%;
+    padding-bottom: 5rem;
+  }
+  
+  .filho_conteudo_inicial {
+    order: -1; 
+  }
+  
+  .filho_conteudo_inicial_first p {
+    width: 100%;
+  }
+}
